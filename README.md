@@ -2,7 +2,7 @@
 
 As an alternative to building an electron app or using a gui toolkit, run a golang binary embedded in a native macOS SwiftUI app.  The golang binary and SwiftUI app communicate via [http long polling](https://en.wikipedia.org/wiki/Push_technology#Long_polling).
 
-Given that http is unencrypted, the messages can be optionally encrypted using the [imclaren/SwiftKeyExchange swift library](https://github.com/imclaren/SwiftKeyExchange) and [calmdocs/keyexchange go library](https://github.com/imclaren/keyexchange).
+Given that http is unencrypted, the messages can be optionally encrypted using the [imclaren/SwiftKeyExchange swift library](https://github.com/imclaren/SwiftKeyExchange) and [imclaren/keyexchange go library](https://github.com/imclaren/keyexchange).
 
 If you already have xCode and go installed, implementing the following example to build a new running app takes about 2 minutes.
 
@@ -237,7 +237,7 @@ class ItemsProvider: ObservableObject {
 
 macOS does not allow you to use https (i.e. encrypted) connections without significant complexity.  However, connecting the SwiftUI and golang apps via http is relatively simple.
 
-This library creates a Diffie–Hellman Key Exchange ([DHKE](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)) connection between the SwiftUI app and golang app using the [imclaren/SwiftKeyExchange swift library](https://github.com/imclaren/SwiftKeyExchange) and [calmdocs/keyexchange go library](https://github.com/imclaren/keyexchange).  The SwiftUI app sends its public key as an argument to the golang app, and the golang app then sends its public key to stdOut as a [PEM message](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) for the SwiftUI app to read.
+This library creates a Diffie–Hellman Key Exchange ([DHKE](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)) connection between the SwiftUI app and golang app using the [imclaren/SwiftKeyExchange swift library](https://github.com/imclaren/SwiftKeyExchange) and [imclaren/keyexchange go library](https://github.com/imclaren/keyexchange).  The SwiftUI app sends its public key as an argument to the golang app, and the golang app then sends its public key to stdOut as a [PEM message](https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail) for the SwiftUI app to read.
 
 If you want to use this library without encypting (or if you want to use your own encryption), update gobinary.go as directed in the comments in that file, and change the swift publish function as follows:  
 ```

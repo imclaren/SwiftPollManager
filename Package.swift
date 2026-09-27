@@ -18,8 +18,8 @@ let package = Package(
             targets: ["SwiftPollManager"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/calmdocs/SwiftProcessManager", branch: "main"),
-        .package(url: "https://github.com/calmdocs/SwiftKeyExchange", branch: "main")
+        .package(url: "https://github.com/imclaren/SwiftProcessManager", branch: "main"),
+        .package(url: "https://github.com/imclaren/SwiftKeyExchange", branch: "main")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

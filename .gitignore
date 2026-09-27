@@ -24,3 +24,7 @@ go.work
 # Xcode per-user state: window layout, breakpoints, scheme ordering.
 # Rewritten on nearly every open or build, and specific to one person.
 xcuserdata/
+
+# SwiftPM build directory and the compiled helper
+.build/
+gobinary/gobinary

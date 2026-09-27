@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/calmdocs/appexit"
-	"github.com/calmdocs/keyexchange"
+	"github.com/imclaren/appexit"
+	"github.com/imclaren/keyexchange"
 
 	"github.com/gorilla/mux"
 )

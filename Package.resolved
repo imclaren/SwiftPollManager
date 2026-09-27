@@ -4,7 +4,7 @@
     {
       "identity" : "swiftkeyexchange",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/calmdocs/SwiftKeyExchange",
+      "location" : "https://github.com/imclaren/SwiftKeyExchange",
       "state" : {
         "branch" : "main",
         "revision" : "55a06c0b47c12b40412e722fffe83e120525569b"
@@ -13,7 +13,7 @@
     {
       "identity" : "swiftprocessmanager",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/calmdocs/SwiftProcessManager",
+      "location" : "https://github.com/imclaren/SwiftProcessManager",
       "state" : {
         "branch" : "main",
         "revision" : "b56b6e9b0cfdafa1d472521313cab3d4758384b4"
